@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kataloger — Kyrre Profil AS</title>
+  <meta name="description" content="Bla gjennom Kyrre Profil sine kataloger: klær, arbeidstøy, reklameartikler, gaver, sport og mer. Hent inspirasjon til profilering av bedriften din." />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      <a href="index.html" aria-label="Kyrre Profil — forside">
+        <img class="logo" src="assets/logo-dark.svg" alt="Kyrre Profil AS" />
+      </a>
+      <nav class="nav" id="nav">
+        <a class="nav-link" href="index.html#tjenester">Tjenester</a>
+        <a class="nav-link" href="kataloger.html">Kataloger</a>
+        <a class="nav-link" href="index.html#kontakt">Kontakt</a>
+        <a class="btn btn-primary btn-sm" href="mailto:inge@kyrreprofil.no">Få et tilbud</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Meny" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow reveal">Kataloger</span>
+        <h1 class="reveal" style="margin-top:1rem;">Bla gjennom utvalget vårt</h1>
+        <p class="reveal">Vi har samlet kataloger med et variert utvalg av produkter, fra klær og arbeidstøy til reklameartikler og gaver. Klikk på en katalog for å åpne den. Finner du noe du liker, hjelper vi deg gjerne videre.</p>
+      </div>
+    </section>
+
+    <div class="container" id="catalogRoot"></div>
+
+    <section class="block" style="padding-top:clamp(2.5rem,5vw,4rem);">
+      <div class="container">
+        <div class="contact-card reveal" style="text-align:center;max-width:46rem;margin-inline:auto;">
+          <h3>Fant du noe du liker?</h3>
+          <p style="margin-inline:auto;max-width:32rem;">Vi hjelper deg med å velge riktige produkter, design og trykk. Ta kontakt for en uforpliktende prat.</p>
+          <a class="btn btn-light" href="mailto:inge@kyrreprofil.no" style="max-width:18rem;margin-inline:auto;">Kontakt oss</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <img class="footer-logo" src="assets/logo-light.svg" alt="Kyrre Profil AS" />
+          <p>Din partner for profesjonell profilering. Klær og reklameartikler som øker synligheten og styrker merkevaren din.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Kontakt</h4>
+          <a href="tel:+4794496886">944 96 886</a>
+          <a href="mailto:inge@kyrreprofil.no">inge@kyrreprofil.no</a>
+          <p>Kanalveien 51, 5068 Bergen</p>
+        </div>
+        <div class="footer-col">
+          <h4>Snarveier</h4>
+          <a href="index.html#tjenester">Tjenester</a>
+          <a href="kataloger.html">Kataloger</a>
+          <a href="index.html#kontakt">Kontakt</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year">2026</span> Kyrre Profil AS. Alle rettigheter reservert.</span>
+        <span>Nettside levert av <a href="https://www.dietrichsmarketing.no/" target="_blank" rel="noopener">Dietrichs Marketing</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    var CATALOGS = [
+      { cat: "Klær og tekstiler", items: [
+        { img: "67098760b72508f33989deb8.jpg", title: "Clique", tag: "Profilklær", href: "https://issuu.com/reklamehuset_knarvik/docs/clique_2024_v1" },
+        { img: "67098760358cf573cab555b0.jpg", title: "Cottover", tag: "Bærekraftige klær", href: "https://issuu.com/reklamehuset_knarvik/docs/cottover_2024_v1" },
+        { img: "6709876173b17c9359be58d0.jpg", title: "James Harvest", tag: "Klær", href: "https://issuu.com/reklamehuset_knarvik/docs/james_harvest_2024_v1" },
+        { img: "6709875ec9bf55ce844f254a.webp", title: "Craft Corporate", tag: "Klær", href: "https://viewer.joomag.com/craft-corporate-aw24-v1/0176495001503902632" },
+        { img: "6709875e83fbde6d746e48d8.webp", title: "Cutter & Buck", tag: "Klær", href: "https://issuu.com/reklamehuset_knarvik/docs/cutter_" },
+        { img: "67098762dfde45f4c0faa3cf.jpg", title: "Printer", tag: "Klær", href: "https://issuu.com/reklamehuset_knarvik/docs/printer_2024_v1" },
+        { img: "6709875f5367ac417cc6a9b1.webp", title: "New Wave Print", tag: "Tekstil", href: "https://issuu.com/reklamehuset_knarvik/docs/new_wave_print_aw24_v2" },
+        { img: "6709875f5b1272a470fd48a6.webp", title: "Harvest Outdoor", tag: "Yttertøy", href: "https://issuu.com/reklamehuset_knarvik/docs/harvest_outdoor" },
+        { img: "6709875f4840b481e62d466a.webp", title: "Vinga of Sweden", tag: "Tekstil", href: "https://issuu.com/reklamehuset_knarvik/docs/vinga_aw24_no_pages" },
+        { img: "6709875f9557e33116654c4c.webp", title: "TG Collection", tag: "Klær", href: "https://viewer.joomag.com/tg-h-aw24-v1/0858695001548839005" },
+        { img: "6709875e49377089c15bd516.webp", title: "B2B-katalog", tag: "Tekstil", href: "https://issuu.com/reklamehuset_knarvik/docs/b2b_katalog_nok" },
+        { img: "6709875edd5e7ffff5b9a5cf.jpg", title: "Miljøfolder", tag: "Bærekraft", href: "https://issuu.com/reklamehuset_knarvik/docs/milj_folder_v1" }
+      ]},
+      { cat: "Arbeidstøy", items: [
+        { img: "67098762ad6d7b6cb5f2626d.jpg", title: "Projob", tag: "Arbeidstøy", href: "https://issuu.com/reklamehuset_knarvik/docs/projob_2024_v1" },
+        { img: "67098761dd5e7ffff5b9a80e.jpg", title: "Jobman", tag: "Arbeidstøy", href: "https://issuu.com/reklamehuset_knarvik/docs/jobman_nyheter_2024_v1" }
+      ]},
+      { cat: "Trening og sport", items: [
+        { img: "67098761a34c50cc227d7635.jpg", title: "Craft Custom", tag: "Sportsklær", href: "https://issuu.com/reklamehuset_knarvik/docs/craft_custom_2023_v4" },
+        { img: "6709865628f5140895fac504.png", title: "Trelagsprinsippet", tag: "Trening", href: "https://issuu.com/reklamehuset_knarvik/docs/craft_x_trelagsprinsippet_januar_2024" },
+        { img: "6709875f58483a242a443b1d.webp", title: "Norway Collection Ski-VM 25", tag: "Sport", href: "https://issuu.com/reklamehuset_knarvik/docs/norway_collection_-_ski-vm_25_edition" },
+        { img: "6709875eb1955ea664ea5e89.jpg", title: "Nor Katalog", tag: "Sport", href: "https://issuu.com/reklamehuset_knarvik/docs/nor_katalog_2023_v1_ccc622e6a39e31" },
+        { img: "67098762eaec4e7a5a31cd15.png", title: "Løpekatalog", tag: "Løp", href: "https://issuu.com/reklamehuset_knarvik/docs/l_pekatalog_2024" }
+      ]},
+      { cat: "Gaver og hjem", items: [
+        { img: "67098761edd8cf4b43adc48a.webp", title: "Firmagavemagasinet", tag: "Gaver", href: "https://issuu.com/reklamehuset_knarvik/docs/firmagavemagasinet_20242025" },
+        { img: "6709875fea2ce0573a4f57fb.webp", title: "Sagaform", tag: "Hjem", href: "https://issuu.com/reklamehuset_knarvik/docs/sagaform_aw24_v1" },
+        { img: "6709875f49377089c15bd817.webp", title: "Kosta Boda", tag: "Hjem", href: "https://issuu.com/reklamehuset_knarvik/docs/kosta_boda_aw24_v1" },
+        { img: "6709875e2b70f5e0268c8790.webp", title: "DJ", tag: "Gaver", href: "https://issuu.com/reklamehuset_knarvik/docs/dj_aw24_v1" },
+        { img: "670987625367ac417cc6b1a1.png", title: "SACKit", tag: "Lyd og elektronikk", href: "https://issuu.com/reklamehuset_knarvik/docs/sackit_b2b_catalog_2024_eu" },
+        { img: "6709875e6a9a2ab78939da37.jpg", title: "Bestikk", tag: "Kjøkken", href: "https://issuu.com/reklamehuset_knarvik/docs/bestikk" },
+        { img: "67098761bc065eead5853ffd.jpg", title: "Fiskars", tag: "Hjem", href: "https://issuu.com/reklamehuset_knarvik/docs/fiskars_2023_veilpris" },
+        { img: "6709875eea2ce0573a4f5797.webp", title: "Carlo", tag: "Produktkatalog", href: "https://issuu.com/reklamehuset_knarvik/docs/carlo_produktkatalog_2024_no_webb" },
+        { img: "6709875fc9bf55ce844f2651.webp", title: "Borgstena", tag: "Hjem", href: "https://issuu.com/reklamehuset_knarvik/docs/borgstena_produkt_hv-24-no" },
+        { img: "6709875e33b6c18f41d4b162.png", title: "Adelante", tag: "Mat og kjøkken", href: "https://issuu.com/reklamehuset_knarvik/docs/adelante_katalog_b2b_no_ss22" }
+      ]},
+      { cat: "Reklameartikler og giveaways", items: [
+        { img: "6709876216787929ba403bfc.jpg", title: "Toppoint", tag: "Reklameartikler", href: "https://issuu.com/reklamehuset_knarvik/docs/toppoint_2024_v1" },
+        { img: "6709875e3f2030d7c366d85b.jpg", title: "Steel Bottles", tag: "Drikkeflasker", href: "https://issuu.com/reklamehuset_knarvik/docs/new_wave_norway_as_steelbottles_aw_2020" },
+        { img: "6709877028f5140895fbc882.jpg", title: "Skriveredskaper", tag: "Penner", href: "https://issuu.com/reklamehuset_knarvik/docs/writings_instruments_-_toppoint" },
+        { img: "6709876363a26c39c25c57ee.jpg", title: "Solbriller OXY", tag: "Giveaways", href: "https://issuu.com/reklamehuset_knarvik/docs/solbriller_oxy-_robust-nobrand_2024" }
+      ]}
+    ];
+
+    (function renderCatalogs() {
+      var root = document.getElementById("catalogRoot");
+      var html = "";
+      CATALOGS.forEach(function (group) {
+        html += '<section class="cat-section">';
+        html += '<h2 class="reveal">' + group.cat + "</h2>";
+        html += '<div class="cat-grid">';
+        group.items.forEach(function (it) {
+          html += '<a class="cat-item reveal" href="' + it.href + '" target="_blank" rel="noopener">';
+          html += '<div class="cover"><img src="assets/catalogs/' + it.img + '" alt="' + it.title + ' katalog" loading="lazy" /></div>';
+          html += '<div class="cap">' + it.title + "<span>" + it.tag + "</span></div>";
+          html += "</a>";
+        });
+        html += "</div></section>";
+      });
+      root.innerHTML = html;
+    })();
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
