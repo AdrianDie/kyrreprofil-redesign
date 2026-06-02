@@ -96,9 +96,8 @@ h3 { font-size: clamp(1.12rem, 1.6vw, 1.4rem); letter-spacing: -.01em; }
   transition: background .3s ease, box-shadow .3s ease, padding .3s ease;
 }
 .site-header.scrolled {
-  background: rgba(251, 248, 241, .85);
-  backdrop-filter: saturate(140%) blur(12px);
-  box-shadow: 0 1px 0 var(--line);
+  background: rgba(251, 248, 241, .97);
+  box-shadow: 0 1px 0 var(--line), 0 6px 20px rgba(30, 31, 34, .05);
   padding: .7rem 0;
 }
 .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
