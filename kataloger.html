@@ -80,49 +80,41 @@
   </footer>
 
   <script>
+    // Kataloger hentet fra New Wave Norway (https://www.newwave.no/kataloger/).
+    // Bilder og lenker gjengis med New Waves tillatelse (se katalogsiden deres).
+    var NW = "https://www.newwave.no";
     var CATALOGS = [
       { cat: "Klær og tekstiler", items: [
-        { img: "67098760b72508f33989deb8.jpg", title: "Clique", tag: "Profilklær", href: "https://www.newwave.no/kataloger/" },
-        { img: "67098760358cf573cab555b0.jpg", title: "Cottover", tag: "Bærekraftige klær", href: "https://www.newwave.no/kataloger/" },
-        { img: "6709876173b17c9359be58d0.jpg", title: "James Harvest", tag: "Klær", href: "https://www.newwave.no/kataloger/" },
-        { img: "6709875ec9bf55ce844f254a.webp", title: "Craft Corporate", tag: "Klær", href: "https://www.newwave.no/kataloger/" },
-        { img: "6709875e83fbde6d746e48d8.webp", title: "Cutter & Buck", tag: "Klær", href: "https://www.newwave.no/kataloger/" },
-        { img: "67098762dfde45f4c0faa3cf.jpg", title: "Printer", tag: "Klær", href: "https://www.newwave.no/kataloger/" },
-        { img: "6709875f5367ac417cc6a9b1.webp", title: "New Wave Print", tag: "Tekstil", href: "https://www.newwave.no/kataloger/" },
-        { img: "6709875f5b1272a470fd48a6.webp", title: "Harvest Outdoor", tag: "Yttertøy", href: "https://www.newwave.no/kataloger/" },
-        { img: "6709875f4840b481e62d466a.webp", title: "Vinga of Sweden", tag: "Tekstil", href: "https://www.newwave.no/kataloger/" },
-        { img: "6709875f9557e33116654c4c.webp", title: "TG Collection", tag: "Klær", href: "https://www.newwave.no/kataloger/" },
-        { img: "6709875e49377089c15bd516.webp", title: "B2B-katalog", tag: "Tekstil", href: "https://www.newwave.no/kataloger/" },
-        { img: "6709875edd5e7ffff5b9a5cf.jpg", title: "Miljøfolder", tag: "Bærekraft", href: "https://www.newwave.no/kataloger/" }
+        { img: NW + "/globalassets/new-wave-norway/images/kataloger/norge-2026.png", title: "Norge 2026", tag: "Profilklær", href: "https://joom.ag/vsvd" },
+        { img: NW + "/globalassets/new-wave-norway/images/kataloger/2026/clique-ss26.jpg", title: "Clique 2026", tag: "Profilklær", href: "https://joom.ag/ADMI" },
+        { img: NW + "/globalassets/new-wave-norway/images/kataloger/2026/cottover--co-2026.jpg", title: "Cottover & Co 2026", tag: "Bærekraftige klær", href: "https://joom.ag/TmAa" },
+        { img: NW + "/globalassets/new-wave-norway/images/kataloger/2026/craft-corporate-ss26.jpg", title: "Craft Corporate SS26", tag: "Klær", href: "https://joom.ag/3D9L" },
+        { img: NW + "/globalassets/new-wave-norway/images/kataloger/2026/cutter--buck-ss26.jpg", title: "Cutter & Buck SS26", tag: "Klær", href: "https://joom.ag/ND9L" },
+        { img: NW + "/globalassets/new-wave-norway/images/kataloger/2026/j.-harvest--frost-2026.jpg", title: "J. Harvest & Frost 2026", tag: "Premium", href: "https://joom.ag/w88e" },
+        { img: NW + "/globalassets/new-wave-norway/images/kataloger/2026/james-harvest-2026.jpg", title: "James Harvest 2026", tag: "Klær", href: "https://joom.ag/aPdW" },
+        { img: NW + "/globalassets/new-wave-norway/images/kataloger/2026/printer-2026.jpg", title: "Printer 2026", tag: "Klær", href: "https://joom.ag/D90a" },
+        { img: NW + "/globalassets/new-wave-norway/images/kataloger/2026/tenson-corporate-ss26_v1.jpg", title: "Tenson Corporate SS26", tag: "Yttertøy", href: "https://joom.ag/9lSd" },
+        { img: NW + "/globalassets/new-wave-norway/images/kataloger/2026/untagged-movement-2026.jpg", title: "Untagged Movement 2026", tag: "Athleisure", href: "https://joom.ag/YqEd" },
+        { img: NW + "/globalassets/new-wave-norway/images/kataloger/2026/spesialdesign-ss26.jpg", title: "Specialdesign SS26", tag: "Spesialdesign", href: "https://joom.ag/2MNW" }
       ]},
       { cat: "Arbeidstøy", items: [
-        { img: "67098762ad6d7b6cb5f2626d.jpg", title: "Projob", tag: "Arbeidstøy", href: "https://www.newwave.no/kataloger/" },
-        { img: "67098761dd5e7ffff5b9a80e.jpg", title: "Jobman", tag: "Arbeidstøy", href: "https://www.newwave.no/kataloger/" }
+        { img: NW + "/globalassets/new-wave-norway/images/kataloger/2026/jobman-2026.jpg", title: "Jobman 2026", tag: "Arbeidstøy", href: "https://joom.ag/Q0OC" },
+        { img: NW + "/globalassets/new-wave-norway/images/kataloger/2026/projob-2026.jpg", title: "ProJob 2026", tag: "Arbeidstøy", href: "https://joom.ag/hX6W" }
       ]},
       { cat: "Trening og sport", items: [
-        { img: "67098761a34c50cc227d7635.jpg", title: "Craft Custom", tag: "Sportsklær", href: "https://www.newwave.no/kataloger/" },
-        { img: "6709865628f5140895fac504.png", title: "Trelagsprinsippet", tag: "Trening", href: "https://www.newwave.no/kataloger/" },
-        { img: "6709875f58483a242a443b1d.webp", title: "Norway Collection Ski-VM 25", tag: "Sport", href: "https://www.newwave.no/kataloger/" },
-        { img: "6709875eb1955ea664ea5e89.jpg", title: "Nor Katalog", tag: "Sport", href: "https://www.newwave.no/kataloger/" },
-        { img: "67098762eaec4e7a5a31cd15.png", title: "Løpekatalog", tag: "Løp", href: "https://www.newwave.no/kataloger/" }
+        { img: NW + "/contentassets/655254a787b8490893ed882968095ff3/skjermbilde-2026-04-21-101059.png", title: "Løpekatalog 2026", tag: "Løp", href: "https://joom.ag/twZd" },
+        { img: NW + "/globalassets/new-wave-norway/images/kataloger/2026/craft-custom-2026.jpg", title: "Craft Custom Design 2026", tag: "Sportsklær", href: "https://joom.ag/I7dd" },
+        { img: NW + "/globalassets/new-wave-norway/images/kataloger/2026/klubbkatalog_2026_ny.jpg", title: "Craft Teamwear 2026", tag: "Teamwear", href: "https://joom.ag/8boe" },
+        { img: NW + "/globalassets/new-wave-norway/images/kataloger/2025/seger_2025.jpg", title: "Seger 2025", tag: "Sokker", href: "https://joom.ag/ZpZL" }
       ]},
       { cat: "Gaver og hjem", items: [
-        { img: "67098761edd8cf4b43adc48a.webp", title: "Firmagavemagasinet", tag: "Gaver", href: "https://www.newwave.no/kataloger/" },
-        { img: "6709875fea2ce0573a4f57fb.webp", title: "Sagaform", tag: "Hjem", href: "https://www.newwave.no/kataloger/" },
-        { img: "6709875f49377089c15bd817.webp", title: "Kosta Boda", tag: "Hjem", href: "https://www.newwave.no/kataloger/" },
-        { img: "6709875e2b70f5e0268c8790.webp", title: "DJ", tag: "Gaver", href: "https://www.newwave.no/kataloger/" },
-        { img: "670987625367ac417cc6b1a1.png", title: "SACKit", tag: "Lyd og elektronikk", href: "https://www.newwave.no/kataloger/" },
-        { img: "6709875e6a9a2ab78939da37.jpg", title: "Bestikk", tag: "Kjøkken", href: "https://www.newwave.no/kataloger/" },
-        { img: "67098761bc065eead5853ffd.jpg", title: "Fiskars", tag: "Hjem", href: "https://www.newwave.no/kataloger/" },
-        { img: "6709875eea2ce0573a4f5797.webp", title: "Carlo", tag: "Produktkatalog", href: "https://www.newwave.no/kataloger/" },
-        { img: "6709875fc9bf55ce844f2651.webp", title: "Borgstena", tag: "Hjem", href: "https://www.newwave.no/kataloger/" },
-        { img: "6709875e33b6c18f41d4b162.png", title: "Adelante", tag: "Mat og kjøkken", href: "https://www.newwave.no/kataloger/" }
+        { img: NW + "/globalassets/new-wave-norway/images/kataloger/2026/sagaform-ss26.jpg", title: "Sagaform SS26", tag: "Hjem", href: "https://joom.ag/PXyC" },
+        { img: NW + "/globalassets/new-wave-norway/images/kataloger/2026/kostaboda-ss26.jpg", title: "Kosta Boda SS26", tag: "Hjem", href: "https://joom.ag/M0lW" },
+        { img: NW + "/globalassets/new-wave-norway/images/kataloger/2026/orrefors-ss26.jpg", title: "Orrefors SS26", tag: "Hjem", href: "https://joom.ag/ZnlW" },
+        { img: NW + "/globalassets/new-wave-norway/images/kataloger/2026/dj-ss26.jpg", title: "D&J SS26", tag: "Gaver", href: "https://joom.ag/LKlL" }
       ]},
       { cat: "Reklameartikler og giveaways", items: [
-        { img: "6709876216787929ba403bfc.jpg", title: "Toppoint", tag: "Reklameartikler", href: "https://www.newwave.no/kataloger/" },
-        { img: "6709875e3f2030d7c366d85b.jpg", title: "Steel Bottles", tag: "Drikkeflasker", href: "https://www.newwave.no/kataloger/" },
-        { img: "6709877028f5140895fbc882.jpg", title: "Skriveredskaper", tag: "Penner", href: "https://www.newwave.no/kataloger/" },
-        { img: "6709876363a26c39c25c57ee.jpg", title: "Solbriller OXY", tag: "Giveaways", href: "https://www.newwave.no/kataloger/" }
+        { img: NW + "/globalassets/new-wave-norway/images/kataloger/2026/toppoint-2026.jpg", title: "Toppoint 2026", tag: "Reklameartikler", href: "https://joom.ag/TRdW" }
       ]}
     ];
 
@@ -135,7 +127,7 @@
         html += '<div class="cat-grid">';
         group.items.forEach(function (it) {
           html += '<a class="cat-item reveal" href="' + it.href + '" target="_blank" rel="noopener">';
-          html += '<div class="cover"><img src="assets/catalogs/' + it.img + '" alt="' + it.title + ' katalog" loading="lazy" /></div>';
+          html += '<div class="cover"><img src="' + it.img + '" alt="' + it.title + ' katalog" loading="lazy" /></div>';
           html += '<div class="cap">' + it.title + "<span>" + it.tag + "</span></div>";
           html += "</a>";
         });
